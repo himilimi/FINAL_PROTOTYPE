@@ -31,7 +31,7 @@ int switchStateRed;
 int switchStateTilt;
 int teller = 0;
 int tellerPrev = 0;
-unsigned long lengde = 10000;
+unsigned long lengde = 120000;
 boolean mandagBo = false;
 boolean tirsdagBo = false;
 boolean onsdagBo = false;
@@ -69,14 +69,6 @@ unsigned long wheelMillis;
 
 
 void setup() {
-  pinMode(mandagB, INPUT_PULLUP);
-  pinMode(tirsdagB, INPUT_PULLUP);
-  pinMode(onsdagB, INPUT_PULLUP);
-  pinMode(torsdagB, INPUT_PULLUP);
-  pinMode(fredagB, INPUT_PULLUP);
-  pinMode(lordagB, INPUT_PULLUP);
-  pinMode(sondagB, INPUT_PULLUP);
-  pinMode(alleB, INPUT_PULLUP);
   pinMode(resetButton, INPUT_PULLUP);
   pinMode(tiltSwitch, INPUT_PULLUP);
   Serial.begin(9600);
